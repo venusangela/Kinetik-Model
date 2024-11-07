@@ -41,3 +41,12 @@ Sistem ini dijelaskan oleh persamaan differensial berikut:
 ![ODE Kinetik Model][def]
 
 [def]: image.png
+
+dan digambarkan pada bagian code berikut:
+```
+    dmRNA_LhGR_dt = k_transcr_LhGR * gene_LhGR - k_degrad_mRNA * mRNA_LhGR
+    dLhGR_dt = k_transl_LhGR * mRNA_LhGR - k_degrad_LhGR * LhGR - k_on * Dex * LhGR + k_off * Dex_LhGR
+    dDex_dt = -k_on * Dex * LhGR + k_off * Dex_LhGR
+    dDex_LhGR_dt = k_on * Dex * LhGR - k_off * Dex_LhGR
+    dTMV_dt = (alpha * (Dex_LhGR**n)/(Kd + Dex_LhGR**n)) - k_degrad_TMV * TMV
+```
