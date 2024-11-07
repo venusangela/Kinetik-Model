@@ -24,16 +24,16 @@ Model ini menggambarkan lima variabel:
 ## Parameter Model
 
 Kinetik model menggunakan parameter berikut:
-* k_transcr_LhGR: laju transkripsi
-* k_degrad_mRNA: laju degradasi mRNA
-* k_transl_LhGR: laju translasi
-* k_degrad_LhGR: laju degradasi protein
+* k_transcr_LhGR (k1): laju transkripsi
+* k_degrad_mRNA (d1): laju degradasi mRNA
+* k_transl_LhGR (k2): laju translasi
+* k_degrad_LhGR (d2): laju degradasi protein
 * k_on: laju pengikatan
 * k_off: laju pelepasan
 * Kd: konstanta disosiasi
 * n: Koefisien Hill
 * alpha: laju produksi TMV maksimal
-* k_degrad_TMV: laju degradasi TMV
+* k_degrad_TMV (d4): laju degradasi TMV
 
 ## Persamaan Model
 
